@@ -1,71 +1,52 @@
-# Minimal WebSocket Chat App
+# Chat Application
 
-This is a minimal real-time chat application built with **Spring Boot**, **React.js**, and **Tailwind CSS**. It utilizes WebSockets to enable seamless live communication between users.
+This is a real-time chat application built using **Spring Boot** and **React**, leveraging **WebSockets** for live messaging.
 
 ## Features
-- Real-time messaging with WebSockets
-- Backend powered by **Spring Boot**
-- Frontend built with **React.js** and **Tailwind CSS**
-- Minimal and elegant UI
+- Create and join chat rooms
+- Real-time messaging
+- MongoDB for message storage
+- Multi-client support
 
----
+## Screenshots
 
-## Project Structure
+### . Create a room
+Click on the create room button
+![create room](./images/joinroom.png)
+
+### 2. Room Created
+A chat room is created successfully and saved in database i.e MongoDb.
+
+![Room Created](./images/roomcreated.png)
+
+### 3. Second Client Joins the Room
+Another user joins the created chat room.
+
+![2nd Client Joins](./2ndclient.png)
+
+### 4. Real-time Chatting
+Users can send and receive messages in real-time.
+
+![Chatting](./chatting.png)
+
+## Technologies Used
+- **Backend:** Spring Boot, WebSockets, MongoDB
+- **Frontend:** React, Tailwind CSS
+
+## How to Run
+
+### Backend
+```sh
+cd backend
+./mvnw spring-boot:run
 ```
-chatapp/
-├── chat-app-backend/   # Spring Boot backend
-│   ├── src/main/java/com/jashan/chat/   # Java source code
-│   ├── src/main/resources/              # Configuration files
-│   ├── pom.xml                           # Maven dependencies
-│
-├── chat-app-frontend/   # React frontend
-│   ├── src/                            # React components
-│   ├── tailwind.config.js              # Tailwind CSS setup
-│   ├── package.json                     # Frontend dependencies
+
+### Frontend
+```sh
+cd frontend
+npm install
+npm start
 ```
 
-## Getting Started
-
-### 1. Backend Setup (Spring Boot)
-#### Prerequisites:
-- JDK 17+
-- Maven
-
-#### Steps:
-1. Navigate to the backend directory:
-   ```sh
-   cd chat-app-backend
-   ```
-2. Build and run the Spring Boot server:
-   ```sh
-   mvn spring-boot:run
-   ```
-3. The backend will start on **http://localhost:8080**.
-
-### 2. Frontend Setup (React + Tailwind)
-#### Prerequisites:
-- Node.js (18+ recommended)
-- npm or yarn
-
-#### Steps:
-1. Navigate to the frontend directory:
-   ```sh
-   cd chat-app-frontend
-   ```
-2. Install dependencies:
-   ```sh
-   npm install  # or yarn install
-   ```
-3. Start the development server:
-   ```sh
-   npm run dev  # or yarn dev
-   ```
-4. The frontend will be available at **http://localhost:5173**.
-
-## WebSocket Integration
-The app uses WebSockets for real-time messaging. The WebSocket endpoint is:
-```
-ws://localhost:8080/chat
-```
-Clients can connect and exchange messages in real time using this WebSocket API.
-
+## Contribution
+Feel free to fork this repository and create a pull request with improvements!
