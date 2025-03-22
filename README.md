@@ -1,6 +1,6 @@
 # Chat Application
 
-This is a real-time chat application built using **Spring Boot** and **React**, leveraging **WebSockets** for live messaging.
+This is a real-time minimal chat application built using **Spring Boot** and **React**, leveraging **WebSockets** for live messaging.
 
 ## Features
 - Create and join chat rooms
@@ -20,14 +20,14 @@ A chat room is created successfully and saved in database i.e MongoDb.
 ![Room Created](./images/roomcreated.png)
 
 ### 3. Second Client Joins the Room
-Another user joins the created chat room.
+Another user joins the created chat room by clicking on join room button.
 
-![2nd Client Joins](./2ndclient.png)
+![2nd Client Joins](./images/2ndclient.png)
 
 ### 4. Real-time Chatting
 Users can send and receive messages in real-time.
 
-![Chatting](./chatting.png)
+![Chatting](./images/chatting.png)
 
 ## Technologies Used
 - **Backend:** Spring Boot, WebSockets, MongoDB
