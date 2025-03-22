@@ -1,4 +1,4 @@
-# Chat Application
+# RoomChat Application
 
 This is a real-time minimal chat application built using **Spring Boot** and **React**, leveraging **WebSockets** for live messaging.
 
